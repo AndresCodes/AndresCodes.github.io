@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Cypher(){
+                var text = prompt("Type your phrase/sentence: ");
+                var cyphertext = "";
+                for(x in text) {
+                    cyphertext = cyphertext+String.fromCharCode(text.charCodeAt(x)+2)
+                }
+                alert(cyphertext)
+        }
+        </script>
+        <h1>
+            <button onclick='Cypher()'>Type your sentence </button>
+    </head>
+    <body>
+    </body>
+</html>
